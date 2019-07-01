@@ -1,0 +1,42 @@
+/*-- Font Size [size] Pass Pixel value to get REM/Pixel fallback --*/
+
+@mixin fontsize($size) {
+  font-size: ($size / ($base-font-size / 1px)) + 0rem;
+}
+
+/*-- Links [link colour, link decoration, visited colour, hover colour] --*/
+
+@mixin links($link-color, $link-decoration, $visited-color, $hover-color) {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  &:visited {
+    color: $visited-color;
+  }
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+/*-- CSS Animations [duration, timing function, delay, interation count, name] --*/
+
+@mixin css-animation($duration, $timing-func, $delay, $iteration, $name) {
+  animation-duration: $duration;
+  animation-timing-function: $timing-func;
+  animation-delay: $delay;
+  animation-iteration-count: $iteration;
+  animation-name: $name;
+}
+
+/*--- Media Queries [minimum size, maximum size (opt)] ---*/
+
+@mixin media($min, $max:null) {
+  @if ($max) {
+    @media (max-width: $max) and (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+}

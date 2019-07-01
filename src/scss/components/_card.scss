@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: $base-spacing-unit-small $base-spacing-unit-tiny 0 $base-spacing-unit-tiny;
+  @include media($large) {
+    flex-direction: row;
+  }
+}
+
+.layout--block {
+  flex: 1;
+}
+
+.layout--left {
+  @extend .layout--block;
+  @include media($large) {
+    flex: 3;
+    margin-right: $base-spacing-unit-small;
+  }
+}
+
+.layout--right {
+  @extend .layout--block;
+  @include media($small, $medium-top) {
+    margin-bottom: $base-spacing-unit-medium;
+  }
+  @include media($large) {
+    flex: 2;
+    margin-bottom: 0;
+  }
+}
