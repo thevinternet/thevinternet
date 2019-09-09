@@ -1,7 +1,7 @@
 {
   "name": "vinternet",
   "version": "1.0.0",
-  "description": "The Vinternet Web Application",
+  "description": "The Vinternet",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thevinternet/thevinternet.git"
@@ -30,8 +30,8 @@
     "autoprefixer": "^9.6.1",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
-    "express": "^4.17.1",
-    "gulp": "^4.0.2",
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
     "gulp-changed": "^3.2.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
@@ -45,6 +45,6 @@
     "gulp-watch": "^5.0.1",
     "merge-stream": "^1.0.1",
     "postcss-assets": "^5.0.0",
-    "sanitize.css": "^8.0.1"
+    "sanitize.css": "^8.0.0"
   }
 }
