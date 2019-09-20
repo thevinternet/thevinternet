@@ -1,14 +1,14 @@
 .vinternet-artwork {
   min-height: 200px;
-  background-image: url('../images/vinternet-artwork.png');
-  background-image: url('../images/vinternet-artwork.svg');
+  background-image: url("../images/vinternet-artwork.png");
+  background-image: url("../images/vinternet-artwork.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   @include media($large) {
-    background-size: 100% auto;
     background-position: right;
     margin-right: $base-spacing-unit-tiny;
+    margin-bottom: $base-spacing-unit-tiny;
   }
 }
 
@@ -32,23 +32,23 @@
 .project-animation {
   @extend %project-base;
   @include media($large) {
-    background-image: url('../images/vinternet-project-animation.png');
-    background-image: url('../images/vinternet-project-animation.svg');
+    background-image: url("../images/vinternet-project-animation.png");
+    background-image: url("../images/vinternet-project-animation.svg");
   }
 }
 
 .project-validation {
   @extend %project-base;
   @include media($large) {
-    background-image: url('../images/vinternet-project-validation.png');
-    background-image: url('../images/vinternet-project-validation.svg');
+    background-image: url("../images/vinternet-project-validation.png");
+    background-image: url("../images/vinternet-project-validation.svg");
   }
 }
 
 .project-fileupload {
   @extend %project-base;
   @include media($large) {
-    background-image: url('../images/vinternet-project-fileupload.png');
-    background-image: url('../images/vinternet-project-fileupload.svg');
+    background-image: url("../images/vinternet-project-fileupload.png");
+    background-image: url("../images/vinternet-project-fileupload.svg");
   }
 }
